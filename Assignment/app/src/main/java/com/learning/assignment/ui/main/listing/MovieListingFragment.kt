@@ -104,6 +104,7 @@ class MovieListingFragment : BaseFragment<ListingFragmentBinding, MovieListingVi
                 ) {
                     search = text.text.toString()
                     viewModel.searchData(search)
+                    isFavorite = false
                     //adapter.filter.filter(search)
                     hideKeyboard(requireActivity())
                     return true
